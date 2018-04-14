@@ -4,6 +4,14 @@
     <p>This text <b> {{ text }} </b> is recieved from the class of same component  </p>
     <!-- The 'propertyText' is the EXPRESSION here -->
     <p>This text <b> {{ getTitle() }} </b>is recived from getTitle() function of class of same component</p> 
-    <p>The texts 'BMW' & 'M5' ahead are concatenated and displayed here- <b> {{ carMake + " " + carModel }} </b></p>
-  </div>
-</section>>
+    <p>The texts 'BMW' & 'M5' ahead are concatenated and displayed here - <b> {{ carMake + " " + carModel }} </b></p>
+    <p>Mathemathecal operation inside expression  {{ 60 * 3}} ) (this workd within template. nothing passed from component)- <b> {{ 60 * 3}} </b></p>
+    <p style.color={{color}}> The color code passed from component class and binding done by sttyle.color = */ {{ color }} */ </p> 
+    <button (click)=clickCounter()>
+      Click to count
+    </button>
+    <p> Click count is <b><span [innerText]="clickCount"></span></b>  </p>
+    <input type="text" class="form-control" [(ngModel)]="formFeildValue" />
+    <p>The Value entered in the field is <b> {{ formFeildValue }} </b></p> 
+  </div> 
+</section>
