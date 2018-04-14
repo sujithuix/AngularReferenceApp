@@ -1,0 +1,45 @@
+<div class="container-fluid">
+  <h1>
+    {{title}}
+  </h1>
+  <div class="row">
+    <div class="col-md-12">
+      <section class="row">
+        <h1>App component</h1>
+        <div class="col-md-3">
+          <button (click)="Decrement()">Decrement</button>
+          <button (click)="Increment()">Increment</button>
+        </div>
+        <div class="col-md-3">
+
+        </div>
+        <div class="col-md-3">
+
+        </div>
+        <div class="col-md-3">
+
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+
+      <app-data-binding></app-data-binding>
+
+    </div>
+    <div class="col-md-3">
+
+      <app-parent-to-child-comm [count]="Counter"></app-parent-to-child-comm>
+
+     
+    </div>
+
+    <div class="col-md-3">
+
+    </div>
+    <div class="col-md-3">
+
+    </div>
+  </div>
+</div>
