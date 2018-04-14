@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'TEK Tutorials HUB';
+  title = 'Angular Reference App';
 
  
   Counter:number = 5;
