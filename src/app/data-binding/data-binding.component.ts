@@ -14,6 +14,13 @@ export class DataBindingComponent implements OnInit {
 
 text:string = "Binding";
 
+getTitle():string {
+ return this.text;
+}
+
+  carMake:string = "BMW";
+  carModel:string = "M5";
+
   // 'text' is called property
   // The value of 'text' which is passed to teh template is 'Binding'
 
