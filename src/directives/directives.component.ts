@@ -12,4 +12,20 @@ export class DirectivesComponent implements OnInit {
   ngOnInit() {
   }
 
+  movieTitle: string = "List of movies";
+
+  movies: Movie[] = [
+    { "title": "Zootopia", "director": "Byron Howard," },
+    { "title": "Batman", "director": "Zack " },
+    { "title": "Captain", "director": "Anthony" },
+    { "title": "X-Men", "director": "Bryan" },
+    { "title": "Warcraft", "director": "Duncan " },
+
+  ]
+
+}
+
+class Movie {
+  title: string;
+  director: string;
 }
