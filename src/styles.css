@@ -30,3 +30,10 @@ body {
       font-size: 15px;
       border-bottom: 1px solid #aaa;
   }
+
+
+  h2{
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: underline;
+}

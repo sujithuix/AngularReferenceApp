@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-directives',
   templateUrl: './directives.component.html',
-  styleUrls: ['./directives.component.css']
+  // styleUrls: ['./directives.component.css']
 })
 export class DirectivesComponent implements OnInit {
 
@@ -11,6 +11,10 @@ export class DirectivesComponent implements OnInit {
 
   ngOnInit() {
   }
+
+
+
+// Directive ngFor
 
   movieTitle: string = "List of movies";
 
@@ -23,9 +27,23 @@ export class DirectivesComponent implements OnInit {
 
   ]
 
+// Directive ngSwitch
+
+ num : number = 0;  
+ boxColor : string = "red";
+
 }
 
+
+// Directive ngFor
 class Movie {
   title: string;
   director: string;
 }
+
+
+// Directive ngSwitch
+
+
+
+

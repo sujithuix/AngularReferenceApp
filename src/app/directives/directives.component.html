@@ -1,7 +1,7 @@
 <section>
   <h1>Directives - ngFor</h1>
   <div>
-
+    <h2 [innerText]="movieTitle"></h2>
     <table class='table'>
       <thead>
         <tr>
@@ -13,8 +13,6 @@
         <tr *ngFor="let movie of movies">
           <td>{{movie.title}}</td>
           <td>{{movie.director}}</td>
-          <td>{{movie.cast}}</td>
-          <td>{{movie.releaseDate}}</td>
         </tr>
       </tbody>
     </table>
@@ -24,26 +22,38 @@
 </section>
 
 <section>
-    <h1>Directives - ng</h1>
+    <h1>Directives - ngSwitch</h1>
     <div>
-  
-      <table class='table'>
-        <thead>
-          <tr>
-            <th>Title</th>
-            <th>Director</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let movie of movies">
-            <td>{{movie.title}}</td>
-            <td>{{movie.director}}</td>
-            <td>{{movie.cast}}</td>
-            <td>{{movie.releaseDate}}</td>
-          </tr>
-        </tbody>
-      </table>
-  
-  
+    Input a number <input type="text" [(ngModel)]="num" />  
+    
+    <div [ngSwitch]="num">
+
+      <div *ngSwitchCase="'1'">One</div>
+      <div *ngSwitchCase="'2'">Two</div>
+      <div *ngSwitchCase="'3'">Three</div>
+      <div *ngSwitchCase="'4'">Four</div>
+      <div *ngSwitchDefault>This is a number</div> 
+    
+    </div>  
+
     </div>
+    <hr>
+    <div>
+        Select an item 
+        <select [(ngModel)]="boxColor">
+          <option>Red Box Div</option>
+          <option>Blue Box Div</option>
+        </select>
+       
+        <div [ngSwitch]="boxColor">
+          <div *ngSwitchCase="red" style="width: 50px;height: 50px;background:red">One</div>
+          <div *ngSwitchCase="blue" style="width: 50px;height: 50px;background:blue">Two</div>
+          <div *ngSwitchDefault  style="width: 50px;height: 50px;border:1px solid #666;"></div>
+        
+        </div>  
+    
+        </div>
+
+
+    
   </section>
