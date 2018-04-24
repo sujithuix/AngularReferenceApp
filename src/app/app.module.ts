@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { ParentToChildCommComponent } from './parent-to-child-comm/parent-to-child-comm.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { PipeComponent } from './pipe/pipe.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ParentToChildCommComponent,
     DataBindingComponent,
-    DirectivesComponent
+    DirectivesComponent,
+    PipeComponent
   ],
   imports: [
     BrowserModule,
