@@ -7,7 +7,8 @@ import { AppComponent } from './app.component';
 import { ParentToChildCommComponent } from './parent-to-child-comm/parent-to-child-comm.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { DirectivesComponent } from './directives/directives.component';
-import { PipeComponent } from './pipe/pipe.component';
+import { TempConverterPipe } from './temp-converter.pipe';
+import { TemperatureConverterPipe } from './temperature-converter.pipe';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { PipeComponent } from './pipe/pipe.component';
     ParentToChildCommComponent,
     DataBindingComponent,
     DirectivesComponent,
-    PipeComponent
+    TempConverterPipe,
+    TemperatureConverterPipe
   ],
   imports: [
     BrowserModule,
