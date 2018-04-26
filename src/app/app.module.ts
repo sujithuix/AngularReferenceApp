@@ -9,6 +9,8 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { PipeComponent } from './pipe/pipe.component';
 import { TemperatureConverterPipe } from './temperature-converter.pipe';
+import { PipeCustomComponent } from './pipe-custom/pipe-custom.component';
+import { WeightConverterPipe } from './weight-converter.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { TemperatureConverterPipe } from './temperature-converter.pipe';
     DataBindingComponent,
     DirectivesComponent,
     TemperatureConverterPipe,
-    PipeComponent
+    PipeComponent,
+    PipeCustomComponent,
+    WeightConverterPipe
   ],
   imports: [
     BrowserModule,
